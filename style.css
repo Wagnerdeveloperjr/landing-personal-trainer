@@ -1,0 +1,172 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* você viu na aula de box-sizing! */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+/* CABEÇALHO */
+header {
+    background: black;
+    color: white;
+    padding: 20px;
+    border-bottom: 3px solid #00ff88; /* borda verde */
+}
+
+/* CSS para o botão do header */
+.botao-header {
+    background: #25D366; /* cor oficial do WhatsApp */
+    color: white;
+    border: 2px solid white;
+}
+
+.botao-header:hover {
+    background: #128C7E; /* cor mais escura no hover */
+    transform: scale(1.05);
+}
+
+.cabecalho {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cabecalho h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cabecalho span {
+    color: #00ff88; /* cor do texto */
+    font-size: 16px;
+    display: block;
+}
+
+/* BOTÃO */
+.botao {
+    background: #00ff88;
+    color: black;
+    padding: 12px 24px;
+    text-decoration: none; /* tira sublinhado */
+    border-radius: 5px; /* borda arredondada */
+    display: inline-block; /* você viu display */
+    font-weight: bold;
+    border: none;
+    margin-top: 10px;
+}
+
+/* HERO SECTION */
+.hero {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero span {
+    color: #00ff88;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.foto-principal {
+    max-width: 100%;
+    height: auto; /* você viu isso */
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 3px solid #00ff88; /* borda verde */
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+    background: white;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+.beneficios h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.beneficios ul {
+    list-style: none; /* tira as bolinhas */
+}
+
+.beneficios li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    border-left: 4px solid #00ff88; /* borda esquerda verde */
+}
+
+/* SOBRE */
+.sobre {
+    background: #1a1a1a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sobre h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.foto-sobre {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #00ff88;
+}
+
+/* RODAPÉ */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* UM POUCO DE RESPONSIVO (simples) */
+@media (max-width: 600px) {
+    .hero h2 {
+        font-size: 22px;
+    }
+    
+    .beneficios li {
+        font-size: 16px;
+    }
+}
